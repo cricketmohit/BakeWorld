@@ -1,0 +1,191 @@
+#cartcount {
+    font-size: 12px;
+    color: #000000;
+    
+    border-radius: 75%;
+    background: #f6c244;
+    padding: 0 5px;
+    border: 2px  #202cee;
+
+    text-align: center;
+    vertical-align: top;
+}
+
+#cartBox {
+    font-size: 25px;
+    background: #57b8b3;
+    text-align: center;
+	width: 100px;
+	padding: 5px;
+    color: #ffffff;
+    
+}
+#cartBoxOverlap
+{
+    
+	width: 30%;
+	
+    
+}
+#addtocart2 {
+    font-size: 12px;
+    color: #f4ff8d;
+    
+    
+    background: #000000;
+  
+    width: 100px;
+	padding: 5px;
+
+    text-align: center;
+   
+}
+#addtocart {
+    font-size: 12px;
+    color: #f4ff8d;
+    
+    
+    background: #000000;
+  
+   
+
+    text-align: center;
+   
+}
+.social {
+    
+    color: #8c8a84;
+    text-align: left;
+	
+    
+    
+}
+.redColor {
+textcolor: #ff1e0d;
+  background: #ff1e0d;
+ 
+}
+.scrollbarCheckout {
+
+ padding-right: 10px;
+  
+  margin-right: auto;
+  margin-left: auto;
+overflow-y: scroll !important;
+max-height: 450px;
+
+background: #ffffff; 
+ 
+}
+.scrollbarCart {
+
+ padding-right: 10px;
+  
+  margin-right: auto;
+  margin-left: auto;
+overflow-y: scroll !important;
+max-height: 450px;
+
+ 
+}
+.productImageSize {
+
+ object-fit: cover;
+  width:500px;
+  height:500px;
+ 
+}
+.cartImageSize {
+
+ object-fit: cover;
+  width:130px;
+  height:130px;
+ 
+}
+
+.priceCart {
+color: #ff191e;
+
+ 
+}
+/* Create four equal columns that floats next to each other */
+.columnCart {
+    float: left;
+    width: 25%;
+}
+.freeShipping {
+   color: #ff191e;
+}
+
+.loginDiscount {
+   color: #ff191e;
+}
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+.close {
+	color: #000000;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.modalOrderPlaced {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-contentOrderPlaced {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+.closeOrderPlaced {
+	color: #000000;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+

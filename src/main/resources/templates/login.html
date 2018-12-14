@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>The Bake World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="keywords" content="Bake world" />
+<script>
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0);
+	}, false);
+
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+</script>
+<script src="js/local.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css"
+	media="screen" property="" />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/fontawesome-all.css" rel="stylesheet" />
+<link href="css/local.css" rel="stylesheet" />
+<link href="css/simpleLightbox.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous" />
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-25 {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+}
+
+.col-50 {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+}
+
+.col-75 {
+	-ms-flex: 75%; /* IE10 */
+	flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+	padding: 0 16px;
+}
+
+.zoomin img {
+	height: 200px;
+	width: 200px;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+.zoomin img:hover {
+	width: 300px;
+	height: 300px;
+}
+</style>
+</head>
+
+<body>
+	<!--/banner-->
+	<header>
+		<div class="top-bar_sub container-fluid">
+			<div class="row">
+				<div class="col-md-4 top-forms text-left mt-4" data-aos="fade-up">
+					<span> <a href="index.html"><i class="fa fa-home"></i> </a><a
+						id="welcome" href="index.html">Welcome! </a>
+					</span> <span class="mx-lg-4 mx-md-2  mx-1"> <a id="userSign"
+						href="login.html"> <i class="fa fa-lock"></i> Sign In
+					</a>
+
+					</span> <span> <a id="register" href="register.html"> <i
+							class="far fa-user"></i> Register
+					</a>
+					</span> <span class="mx-lg-4 mx-md-2  mx-1"> <a
+						style="display: none; font-size: 0" id="logout" href="logout"><i
+							class="fas fa-sign-out-alt"></i> Logout</a>
+					</span>
+				</div>
+				<div class="col-md-4 logo text-center" data-aos="fade-up">
+					<a class="navbar-brand" href="index.html"> <img alt=""
+						src="images/logo.png"></img>
+					</a>
+				</div>
+
+
+			
+				<div class ="col-md-4 top-forms text-right"  data-aos="fade-up" >
+				<ul class="social_list1 mt-4" >
+						<span><a  href="https://www.facebook.com/thebakeworld/" target="_blank"> <i class="fas fa-comments"> </i></a>
+						<li><a href="https://www.facebook.com/thebakeworld/"
+							target="_blank" class="facebook1 mx-2"> <b
+								class="fab fa-facebook-f"></b>
+
+						</a></li>
+						<li><a href="https://www.instagram.com/thebakeworlds/"
+							target="_blank" class="instagram3"> <b
+								class="fab fa-instagram"></b>
+						</a></li></span>
+					</ul>
+					
+					<ul   data-aos="fade-up">
+						<span><a href=""> <i class="fa fa-phone"> </i> </a><i> +46 739566663</i></span>
+
+
+
+
+					</ul>
+					<ul   data-aos="fade-up">
+						<span> <a href=""><i class="fa fa-envelope"></i></a> <i>
+								thebakeworlds@gmail.com</i>
+						</span>
+
+
+
+					</ul>
+					<ul>
+
+						<span><a href="index.html"></a> <i>Place order by call or by chat!</i>
+
+						</span>
+
+
+					</ul>
+					<br />
+
+
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+
+	<div class="header_top" id="home">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler navbar-toggler-right mx-auto"
+				type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item "><a class="nav-link" href="index.html">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link scroll" href="#menu">Menu</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About
+							Us</a></li>
+
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"> Others </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#"></a> <a class="dropdown-item"
+								href="gallery.html">Gallery</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="404.html">Services</a>
+
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+	</div>
+	<!--//nav-->
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+		<li class="breadcrumb-item active">Signin</li>
+	</ol>
+	<!--/main-->
+	<section class="banner-bottom">
+		<div class="container">
+			<h3 class="tittle">Sign In Now</h3>
+
+
+			<div class="row inner-sec">
+				
+				<div class="login p-5 bg-dark mx-auto mw-100">
+				<a class="price"> <font color="white" id="changed"
+					style="text-align: centre"></font><br />
+				</a><br/>
+					<form method="post" modelAttribute="users">
+						<div class="form-group">
+							<label for="exampleInputEmail1 mb-2">Email address</label> <input
+								type="email" class="form-control" id="emailLogin"
+								aria-describedby="emailHelp" name="email" placeholder=""
+								required="" />
+
+						</div>
+						<font color="red" id="usernameValidate"></font><br />
+
+						<div class="form-group">
+							<label for="exampleInputPassword1 mb-2">Password</label> <input
+								type="password" class="form-control" id="exampleInputPassword1"
+								placeholder="" name="password" required="" />
+
+						</div>
+						<font color="red" id="passwordValidate"></font><br /> <font
+							color="red" id="forgotPasswordValidate"></font>
+						<div class="form-check mb-2">
+							
+
+						</div>
+						<button type="submit" th:action="@{/login}"
+							class="btn btn-primary submit mb-4">Sign In</button>
+
+
+					</form>
+					<form th:action="@{/forgotPassword}" method="post"
+						modelAttribute="users">
+						<p>
+							<a href="register.html"> Don't have an account? Register Now!</a>
+
+						</p>
+						<button type="submit" class="btn btn-primary submit">Forgot
+							Password?</button>
+
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script th:inline="javascript">
+	
+	/*<![CDATA[*/
+
+    var message = /*[[${userInvalid}]]*/ 'default';
+    var message1 = /*[[${incorrectPassword}]]*/ 'default';
+    var email = /*[[${emailLogin}]]*/ 'default';
+    var changed = /*[[${changed}]]*/ 'default';
+
+	/*]]>*/
+	if(message=="userInvalid"){
+	document.getElementById("usernameValidate").innerHTML="Invalid Email, please register or check email id";
+	}
+	if(message1=="incorrectPassword"){
+	document.getElementById("passwordValidate").innerHTML="Incorrect Password, please check !";
+	document.getElementById("forgotPasswordValidate").innerHTML="If you forget your password, please click Forgot Password";
+
+	document.getElementById("emailLogin").value = email;
+	}
+	
+	if(changed=="changed"){
+		document.getElementById("changed").innerHTML="Password changed successfully";
+		}
+	</script>
+	<!--//main-->
+	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 footer-grid text-left" data-aos="fade-right">
+					<h3>About US</h3>
+					<p>We are based in Fika Destination of the world Stockholm,
+						Sweden</p>
+					<div class="read">
+						<a href="about.html" class="btn btn-primary read-m">Read More</a>
+					</div>
+				</div>
+				<!-- subscribe -->
+				<div class="col-lg-8 subscribe-main footer-grid text-left"
+					data-aos="fade-left">
+					<h2>Subscribe for hot updates</h2>
+					<div class="subscribe-main text-left">
+						<div class="subscribe-form">
+							<form th:action="@{/subscribe}" method="post"
+								modelAttribute="subscribe" class="subscribe_form">
+								<input class="form-control" name="emailId" type="email"
+									placeholder="Enter your email..." required="" />
+								<button type="submit" class="btn btn-primary submit">Submit</button>
+							</form>
+
+						</div>
+						<p>We respect your privacy. No spam ever!</p>
+					</div>
+					<!-- //subscribe -->
+					<div class="footer-cpy text-left">
+						<div class="copyrighttop">
+							<ul>
+								<li class="mx-lg-3 mx-md-2 mx-1"><a class="facebook"
+									href="https://www.facebook.com/thebakeworld/" target="_blank">
+										<i class="fab fa-facebook-f"></i> <span>Facebook</span>
+								</a></li>
+								<li><a class="facebook"
+									href="https://www.instagram.com/thebakeworlds/" target="_blank">
+										<i class="fab  fa-instagram"></i> <span>Instagram</span>
+								</a></li>
+							</ul>
+						</div>
+						<div class="copyrightbottom">
+							<p>© 2018 The Bake World. All Rights Reserved</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+	</footer>
+	<!---->
+
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- /js files -->
+	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css"
+		media="all" />
+	<link href='css/aos-animation.css' rel='stylesheet prefetch'
+		type="text/css" media="all" />
+	<script src='js/aos.js'></script>
+	<script src="js/aosindex.js"></script>
+	<!-- //js files -->
+	<!--/ start-smoth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+							  			containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+							 		};
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;">
+		<span id="toTopHover" style="opacity: 1;"> </span>
+	</a>
+
+	<!-- //Custom-JavaScript-File-Links -->
+	<script src="js/bootstrap.js"></script>
+
+<script th:inline="javascript">
+	
+	/*<![CDATA[*/
+
+    var loggedInUser = /*[[${loggedInUser}]]*/ 'default';
+  
+	/*]]>*/
+	if(loggedInUser!=null){
+	document.getElementById("welcome").innerHTML="Welcome "+loggedInUser+"!";
+	 document.getElementById("register").setAttribute("hidden", "");
+	 document.getElementById("userSign").setAttribute("hidden", "");
+	 document.getElementById("logout").setAttribute("style","display:block");
+	}
+	
+	</script>
+	<script type="text/javascript">
+	displayCart();
+	
+	</script>
+</body>
+<style>
+.forgot {
+	color: #4CAF50;
+	padding: 6px;
+}
+
+.success {
+	background-color: #4CAF50;
+} /* Green */
+.info {
+	background-color: #2196F3;
+} /* Blue */
+.warning {
+	background-color: #ff9800;
+} /* Orange */
+.danger {
+	background-color: #f44336;
+} /* Red */
+.other {
+	background-color: #e7e7e7;
+	color: black;
+} /* Gray */
+</style>
+</html>
