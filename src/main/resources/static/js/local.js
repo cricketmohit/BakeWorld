@@ -53,11 +53,24 @@ function orderPlaced(orderId){
 		    }
 		}
 }
+
+function cookieUsage() {
+	var cartCookie = getCookie("terms");
+	var cookies_alert = document.getElementById('cookies_alert');
+	if (cartCookie == "terms") {
+		cookies_alert.style.display = "none";
+	} 
+	var span = document.getElementsByClassName("cookies_close")[0];
+	span.onclick = function() {
+		cookies_alert.style.display = "none";
+		setCookie("terms", "terms", 7);
+	}
+}
 function displayCart(){
 	
 	var cartCookie = getCookie("cookiecartcounts");
 	if(cartCookie=="0" || cartCookie==""){
-		document.getElementById("cartcount").innerHTML = 0;
+	//	document.getElementById("cartcount").innerHTML = 0;
 		return"";
 		}
 	var menuInCartArray = cartCookie.split('*');

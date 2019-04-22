@@ -4,10 +4,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-131090003-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-131090003-1');
+</script>
+
 <title>The Bake World</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="utf-8" />
-<meta name="keywords" content="Bake world" />
+<meta name="keywords"
+	content="The Bake world, Cakes in Stockholm, kakor i stockholm, kakor i stockholm, 
+online kakor i stockholm," />
 <script>
 	addEventListener("load", function() {
 		setTimeout(hideURLbar, 0);
@@ -74,6 +85,14 @@ body {
 	<!--/banner-->
 
 	<header>
+		<div id="cookies_alert">
+			<div class="cookies_container">
+				<div class="cookies_close">&times;</div>
+				<div class="cookies_text">The Bake World uses cookies to make your online experience easier and better. 
+				By using our website, you consent to our use of cookies.</div>
+			</div>
+		</div>
+
 		<div class="top-bar_sub container-fluid">
 			<div class="row">
 				<div class="col-md-4 top-forms text-left mt-4" data-aos="fade-up">
@@ -483,8 +502,8 @@ body {
 											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
 												<h5 th:text="${cake.name}"></h5>
 												<p class="sub-meta mt-2">
-													<a th:text="${cake.currency}"></a>
-													<a th:text="${cake.price}"></a> 
+													<a th:text="${cake.currency}"></a> <a
+														th:text="${cake.price}"></a>
 												</p>
 
 											</div>
@@ -503,8 +522,8 @@ body {
 											<div class="col-md-7 menu-img-info mt-4 mt-md-2">
 												<h5 th:text="${cake.name}"></h5>
 												<p class="sub-meta mt-2">
-													<a th:text="${cake.currency}"></a>
-													<a th:text="${cake.price}"></a> 
+													<a th:text="${cake.currency}"></a> <a
+														th:text="${cake.price}"></a>
 												</p>
 
 											</div>
@@ -694,10 +713,19 @@ body {
 									href="https://www.instagram.com/thebakeworlds/" target="_blank">
 										<i class="fab  fa-instagram"></i> <span>Instagram</span>
 								</a></li>
+								<li class="mx-lg-3 mx-md-2 mx-1"><a class="facebook"
+									href="https://www.facebook.com/thebakeworld/" target="_blank">
+										<i class="fab fa-facebook-f"></i> <span>Facebook</span>
+								</a></li>
+								<li><a class="facebook"
+									href="https://www.instagram.com/thebakeworlds/" target="_blank">
+										<i class="fab  fa-instagram"></i> <span>Instagram</span>
+								</a></li>
 							</ul>
 						</div>
 						<div class="copyrightbottom">
 							<p>© 2018 The Bake World. All Rights Reserved</p>
+							<a href="/terms" >Click here to read about our cookie policy and terms &amp; conditions</a>
 
 						</div>
 					</div>
@@ -710,6 +738,7 @@ body {
 
 	<!-- js -->
 	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery_cookie.js"></script>
 	<!-- //js -->
 	<!-- /flexisel -->
 	<script>
@@ -805,7 +834,9 @@ body {
 	</script>
 	<script type="text/javascript">
 	displayCart();
-	
+	</script>
+	<script type="text/javascript">
+	cookieUsage();
 	</script>
 	<script th:each="bill:${finalBill}" th:inline="javascript">
 	var orderId=0;
@@ -880,7 +911,9 @@ body {
 	}
 	
 	</script>
-
+	<script>
+	cookieUsage
+</script>
 </body>
 
 </html>

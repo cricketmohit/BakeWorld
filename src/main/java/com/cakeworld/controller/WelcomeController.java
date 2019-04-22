@@ -171,6 +171,13 @@ public class WelcomeController {
 				break;
 		    }
 		}*/
+		Thread t = new Thread();
+		try {
+			t.sleep(1200);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Object productId = session.getAttribute("productIdSession");
 		if(productId!=null) {
 			product = menuRepository.findOne(Integer.parseInt(productId.toString()));
@@ -201,7 +208,6 @@ public class WelcomeController {
 		Menu product = menuRepository.findOne(productId.getId());
 		model.addAttribute("product", product);
 		session.setAttribute("productIdSession", productId.getId());
-		Object productId2 = session.getAttribute("productIdSession");
 		return "product";
 	}
 
@@ -222,6 +228,14 @@ public class WelcomeController {
 			model.addAttribute("loggedInUser", user.getName());
 		}
 		return "about";
+	}
+	@RequestMapping("/terms")
+	String terms(Model model, @CookieValue(value = "userEmailCookie", defaultValue = "") String userEmailCookie) {
+		if (!userEmailCookie.equalsIgnoreCase("")) {
+			User user = userRepository.findByEmail(userEmailCookie).get(0);
+			model.addAttribute("loggedInUser", user.getName());
+		}
+		return "terms";
 	}
 
 	@RequestMapping("/blog")

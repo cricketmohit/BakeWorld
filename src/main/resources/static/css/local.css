@@ -188,4 +188,60 @@ color: #ff191e;
 }
 
 
+ #cookies_alert {
+    bottom: 20px;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    width:50%;
+    z-index: 998;
 
+    -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+         -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+}
+
+#cookies_alert.closed {
+    bottom: -120px;
+
+    -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+         -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+}
+
+#cookies_alert .cookies_container {
+    background-color: rgba(0,0,0,0.85);
+    padding: 15px;
+    padding-right: 35px;
+    position: relative;
+}
+
+
+#cookies_alert .cookies_close {
+        color: #ffffff;
+    background-position: center -13px;
+    background-size: 13px;
+    height: 13px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 13px;
+}
+
+#cookies_alert .cookies_close:hover { cursor: pointer; }
+
+#cookies_alert .cookies_text {
+	
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 0.8em;
+}
+
+#cookies_alert .cookies_text a { color: #EA504E; }
+
+#cookies_alert .cookies_text a:hover { text-decoration: underline; }
